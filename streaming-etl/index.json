@@ -1,0 +1,27 @@
+{
+    "title": "Streaming ETL pipeline with CDC, Redpanda, and Apache Flink",
+    "description": "basic stream processing pipelines using Redpanda and Flink SQL",
+    "details": {
+      "intro": {
+        "text": "intro.md",
+        "background": "background.sh"
+      },
+      "steps": [
+        {
+          "title": "The environment",
+          "text": "step1.md"
+        }
+      ],
+      "finish": {
+        "text": "finish.md"
+      },
+      "assets": {
+        "host01": [
+          {"file": "*", "target": "~/"}
+        ]
+      }
+    },
+    "backend": {
+      "imageid": "ubuntu-4GB"
+    }
+  }
