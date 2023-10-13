@@ -101,3 +101,21 @@ services:
         FLINK_PROPERTIES=
         jobmanager.rpc.address: jobmanager
         taskmanager.numberOfTaskSlots: 20
+  # Flink SQL client
+  sql-client:
+    build: {context: ., dockerfile: Dockerfile}
+    container_name: sql-client
+    command:
+      - /opt/flink/bin/sql-client.sh
+      - embedded
+      - -l
+      - /opt/sql-client/lib
+    depends_on:
+      - jobmanager
+    environment:
+      - |
+        FLINK_PROPERTIES=
+        jobmanager.rpc.address: jobmanager
+        rest.address: jobmanager
+    volumes:
+      - ./flink/sql:/etc/sql
