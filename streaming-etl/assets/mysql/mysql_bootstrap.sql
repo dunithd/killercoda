@@ -35,35 +35,6 @@ CREATE TABLE products (
     category VARCHAR(255)
 );
 
--- Insert dummy data into the products table
--- INSERT INTO products (product_name, category) VALUES
---     ('Product A', 'Category 1'),
---     ('Product B', 'Category 1'),
---     ('Product C', 'Category 2'),
---     ('Product D', 'Category 3');
-
--- -- Insert dummy data into the orders table
--- INSERT INTO orders (customer_id, order_date, total_order_amount) VALUES
---     (1, NOW(), 150.00),
---     (2, NOW(), 75.50),
---     (3, NOW(), 200.25);
-
--- -- Insert dummy data into the order_items table
--- -- Assuming order 1 contains product A and product B
--- INSERT INTO order_items (order_id, product_id, quantity, price_per_unit, total_price) VALUES
---     (1, 1, 2, 25.00, 50.00),
---     (1, 2, 3, 15.50, 46.50);
-
--- -- Assuming order 2 contains product C
--- INSERT INTO order_items (order_id, product_id, quantity, price_per_unit, total_price) VALUES
---     (2, 3, 5, 10.00, 50.00);
-
--- -- Assuming order 3 contains product A, B, and D
--- INSERT INTO order_items (order_id, product_id, quantity, price_per_unit, total_price) VALUES
---     (3, 1, 1, 25.00, 25.00),
---     (3, 2, 2, 15.50, 31.00),
---     (3, 4, 3, 30.00, 90.00);
-
 -- Populate the 'products' table
 INSERT INTO products (product_name, category) VALUES
     ('Product 1', 'Category A'),
@@ -86,3 +57,4 @@ INSERT INTO order_items (order_id, product_id, quantity, price_per_unit, total_p
     (3, 1, 1, 25.00, 25.00),
     (4, 4, 2, 50.00, 100.00);
 
+-- INSERT INTO order_items (order_id, product_id, quantity, price_per_unit, total_price) VALUES (1, 1, 4, 50.00, 200.00);

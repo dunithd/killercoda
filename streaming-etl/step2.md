@@ -10,18 +10,23 @@ docker-compose exec mysql mysql -u mysqluser -p
 
 To see the tables, run:
 
-```
+```sql
 use masterclass;
 show tables;
-```
+```{{copy}}
 As we progress, we will perform a join on `order_items` and `products` tables. So, take a closer look at their content by running:
 
-```
+```sql
 select * from order_items;
 select * from products;
-```
+```{{copy}}
 
-Let's follow the same to access the target database in Postgres. Provide `postgrespw` as the password when prompted.
+Exit the console by typing:
+
+```sql
+quit;
+```
+Let's follow the same to access the target database in Postgres.
 
 ```
 docker-compose exec postgres psql -U postgresuser -d masterclass
@@ -29,8 +34,14 @@ docker-compose exec postgres psql -U postgresuser -d masterclass
 
 Run the following to see our target table, `top_selling_products`, which is currently empty.
 
-```
+```sql
 select * from top_selling_products;
+```{{copy}}
+
+Exit the console by typing:
+
+```sql
+quit;
 ```
 
 That's all the databases we will be needing in the coming steps. 

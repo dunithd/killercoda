@@ -11,6 +11,8 @@ on i.product_id=p.product_id
 group by i.payload.product_id, p.payload.product_name;
 ```
 
+Exit the `sql-client` by pressing `Ctrl+C`, followed by typing `quit;`.
+
 When you run this query, the `sql-client` submits it to the `jobmanager`, resulting in a Flink job to be scheduled and run in the Flink cluster.
 
 Apache Flink has a UI that provides an overview of the Flink cluster, enabling you to track the status of jobs and tasks, view cluster logs, and more.

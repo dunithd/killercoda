@@ -16,7 +16,7 @@ You must register two TABLE objects, `order_items` and `products` to consume fro
 
 Run the CREATE TABLE statements below to achieve this.
 
-```sql
+```
 CREATE TABLE order_items(
     payload ROW(
         `order_item_id` INT,
@@ -57,7 +57,7 @@ Remember to hit <Enter> after each statement you copy and paste inside the SQL s
 
 You also need to register the third table, `top_selling_products` to sink the results to Postgres via Flink JDBC connector.
 
-```sql
+```
 CREATE TABLE top_selling_products (
     product_id int,
     product_name varchar,

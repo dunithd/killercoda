@@ -44,6 +44,5 @@ Finally, you can see the shape of change events by consuming any change feed top
 docker-compose exec redpanda rpk topic consume dbz.masterclass.order_items 
 ```{{exec}}
 
-
-
+Press `Ctrl+C` to terminate the `rpk` session and return to the normal prompt.
 

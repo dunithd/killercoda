@@ -10,7 +10,7 @@ The Flink cluster in the pipeline consists of three containers:
 If you inspect the `docker-compose.yaml` file, you'll see that all of the Flink services reference a `Dockerfile`.
 
 ```
-cat docker-compose.yaml | grep -B2 -e image -e build
+cat docker-compose.yml | grep -B2 -e image -e build
 ```{{exec}}
 
 For example:

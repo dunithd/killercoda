@@ -11,8 +11,12 @@ This pipeline consists of the following containers:
 - `debezium` as the change data capture (CDC) agent.
 - `jobmanager`, `taskmanager`, and `sql-client` as components of the Apache Flink cluster that does the streaming ETL.
 
+![Streaming ETL pipeline architecture](./images/architecture.png)
+
 Go ahead and start the services by running:
 
 ```
 docker-compose up -d
 ```{{exec}}
+
+It will take about 2-3 minutes to complete the startup. So, please wait patiently until you see the terminal returns to normal prompt.
