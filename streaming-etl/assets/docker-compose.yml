@@ -17,7 +17,7 @@ services:
         - MYSQL_PASSWORD=mysqlpw
       volumes:
         - ./mysql/mysql.cnf:/etc/mysql/conf.d
-        - ./mysql/mysql_bootstrap.sql:/docker-entrypoint-initdb.d/
+        - ./mysql/mysql_bootstrap.sql:/docker-entrypoint-initdb.d/mysql_bootstrap.sql
         - ./mysql/data:/var/lib/mysql-files/data
   postgres:
     image: debezium/postgres:16
@@ -35,4 +35,4 @@ services:
       - POSTGRES_DB=masterclass
       - PGPASSWORD=postgrespw
     volumes:
-      - ./postgres/postgres_bootstrap.sql:/docker-entrypoint-initdb.d/
+      - ./postgres/postgres_bootstrap.sql:/docker-entrypoint-initdb.d/postgres_bootstrap.sql
