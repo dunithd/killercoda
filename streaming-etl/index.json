@@ -17,7 +17,10 @@
       },
       "assets": {
         "host01": [
-          {"file": "mysql/*", "target": "~/","chmod": "+w"}
+          {"file": "mysql/*", "target": "~/","chmod": "+w"},
+          {"file": "postgres/*", "target": "~/","chmod": "+w"},
+          {"file": "docker-compose.yml", "target": "~/"},
+          {"file": "Dockerfile", "target": "~/"}
         ]
       }
     },
