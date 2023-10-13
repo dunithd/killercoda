@@ -10,6 +10,10 @@
         {
           "title": "The environment",
           "text": "step1.md"
+        },
+        {
+          "title": "Debezium connector for MySQL",
+          "text": "step2.md"
         }
       ],
       "finish": {
