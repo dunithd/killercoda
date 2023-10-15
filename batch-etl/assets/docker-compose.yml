@@ -16,7 +16,7 @@ services:
         - ./mysql/data:/var/lib/mysql-files/data
   etl:
     build: etl
-    depends_on: [mysql]
+    depends_on: [ mysql ]
   postgres:
     image: debezium/postgres:16
     ports:
