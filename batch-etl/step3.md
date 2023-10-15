@@ -46,14 +46,12 @@ RUN pip install mysql-connector-python sqlalchemy pandas psycopg2
 ENTRYPOINT ["python", "./main.py"]
 ```
 
-Let's run this container to kick off the ETL job.
+When you executed the command, `docker-compose up -d` in the Step 1, the ETL container has been built and ran once.
+
+If the it executed successfully, you should see the container `etl` with the exit status 0 as follows.
 
 ```
-docker-compose run etl
-```{{exec}}
-
-If the job executed successfully, you should see a message like this in the console.
-
+docker-compose ps
 ```
-The ETL job completed successfully.
-```
+
+Next, let's check out the `top_selling_products` table in Postgres.
