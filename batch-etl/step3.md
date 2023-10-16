@@ -1,4 +1,4 @@
-Now that we understand the source and target database structures, let's look at the ETL job and run it.
+Now that we understand the source and target database structures, let's look at the ETL job.
 
 We have used Python to implement the ETL job.
 
@@ -53,5 +53,3 @@ If the it executed successfully, you should see the container `etl` with the exi
 ```
 docker-compose ps
 ```
-
-Next, let's check out the `top_selling_products` table in Postgres.

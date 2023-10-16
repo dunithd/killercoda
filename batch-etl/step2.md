@@ -27,14 +27,14 @@ Exit the console by typing:
 ```sql
 quit;
 ```
-Let's follow the same to access the target database in Postgres.
+
+After running the `docker-compose up -d` command in the previous step, the ETL job should run once, populating the Postgres table with results. Let's have a look at it.
 
 ```
 docker-compose exec postgres psql -U postgresuser -d masterclass
 ```{{exec}}
 
-Run the following to see our target table, `top_selling_products`, which is currently empty.
-
+Run the following to see our target table, `top_selling_products`, which should have products against their sales.
 ```sql
 select * from top_selling_products;
 ```{{copy}}
@@ -45,5 +45,4 @@ Exit the console by typing:
 quit;
 ```
 
-That's all the databases we will be needing in the coming steps. 
 

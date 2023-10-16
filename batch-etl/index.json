@@ -18,10 +18,6 @@
         {
           "title": "The ETL job",
           "text": "step3.md"
-        },
-        {
-          "title": "Verify aggregated results",
-          "text": "step4.md"
         }
       ],
       "finish": {

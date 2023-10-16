@@ -4,7 +4,7 @@ If the aggregation continues to run without errors, you should see the `top_sell
 Run the following to verify that.
 
 ```
-docker-compose exec postgres psql -u postgresuser -d masterclass
+docker-compose exec postgres psql -U postgresuser -d masterclass
 ```{{exec}}
 
 ```sql

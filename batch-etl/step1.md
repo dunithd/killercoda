@@ -4,12 +4,6 @@ The business wants to know key metrics like top-selling products to stay on aler
 
 You will build a batch ETL pipeline that runs periodically to extract required tables from the source database, perform table joins to calculate the top selling products, and write the results into a table in Postgres database, which will be used for running sales anaytics.
 
-This pipeline consists of the following containers:
-- `mysql` as the source database.
-- `postgres` as the destination database.
-- `etl` as a Python script performing the ETL job.
-
-
 ![Batch ETL pipeline architecture](./images/architecture.png)
 
 Go ahead and start the services by running:
@@ -17,4 +11,9 @@ Go ahead and start the services by running:
 ```
 docker-compose up -d
 ```{{exec}}
+
+This pipeline starts the following containers:
+- `mysql` as the source database.
+- `postgres` as the destination database.
+- `etl` as a Python script performing the ETL job.
 
